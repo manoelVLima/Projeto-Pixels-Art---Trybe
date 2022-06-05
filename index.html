@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Pixels Art</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Paleta de Cores</h1>
+    </header>
+    <main>
+      <section id="color-palette"></section>
+      <label for="input"></label>
+      <section id="label">
+        <label for="board-size" class="input-group-text"
+          >Crie aqui sua pintura!</label
+        >
+        <input
+          type="number"
+          name="board-size"
+          id="board-size"
+          class="form-control"
+          min="1"
+        />
+        <button id="generate-board" type="button" class="btn btn-success">
+          VQV
+        </button>
+      </section>
+      <button id="clear-board" class="btn btn-danger">Limpar</button>
+      <section id="pixel-board"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
